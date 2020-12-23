@@ -1,0 +1,33 @@
+-----------
+Features
+-----------
+
+-13.56MHz RFID module
+-Operating voltage: 2.5V to 3.3V
+-Communication : SPI, I2C protocol, UART
+-Maximum Data Rate: 10Mbps
+-Read Range: 5cm
+-Current Consumption: 13-26mA
+-Power down mode consumption: 10uA (min)
+
+
+----------
+Pin:
+----------
+
+Vcc: Used to Power the module, typically 3.3V is used
+
+RST: Reset pin – used to reset or power down the module
+
+Ground: Connected to Ground of system
+
+IRQ: Interrupt pin – used to wake up the module when a device comes into range
+
+MISO: MISO pin when used for SPI communication, acts as SCL for I2c and Tx for UART.
+
+MOSI: Master out slave in pin for SPI communication
+
+SCK: Serial Clock pin – used to provide clock source
+
+SS/SDA/Rx: Acts as Serial input (SS) for SPI communication, SDA for IIC and Rx during UART
+

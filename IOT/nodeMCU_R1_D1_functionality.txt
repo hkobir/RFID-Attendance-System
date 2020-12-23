@@ -1,0 +1,21 @@
+-----------
+Features
+------------
+
+-11 digital IO, interrupt/pwm/I2C/one-wire supported(except D0)
+-1 analog input(3.2V max input)
+-a Micro USB connection
+-Compatible with MicroPython, Arduino, nodemcu
+
+--------------
+Documentation
+--------------
+
+Digital Pins:
+The Arduino’s digital pins read only two states : when there is voltage on an input pin and when there is not. 
+This kind of input is usually called digital ( or sometimes binary for two state). These states are commonly referred to as HIGH and LOW. 
+
+Analog pin:
+Sometime we couldn't represent our hardware equipment into two state, such as some sensors which value is continuously change. On that time
+we need analog pins.
+
