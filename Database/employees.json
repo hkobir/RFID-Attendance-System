@@ -1,0 +1,32 @@
+{
+  "employees": [
+    {
+      "id": "C671B32B",
+      "name": "Rahat khan",
+	  "image": "",
+      "dept": "CSE",
+      "Designation": "Lecturer"
+    },
+    {
+      "id": "2398881C",
+      "name": "Ahsan Ullah",
+	  "image": "",
+      "dept": "Civil",
+      "Designation": "Senior Lecturer"
+    },
+    {
+      "id": "1234",
+      "name": "Limon Arif",
+	  "image": "",
+      "dept": "EEE",
+      "Designation": "Lecturer"
+    },
+    {
+      "id": "2222",
+      "name": "Kamal Khandakar",
+	  "image": "",
+      "dept": "Law",
+      "Designation": "Lecturer"
+    }
+  ]
+}
