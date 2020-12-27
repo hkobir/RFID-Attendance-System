@@ -1,32 +1,41 @@
 {
-  "employees": [
-    {
-      "id": "C671B32B",
-      "name": "Rahat khan",
-	  "image": "",
-      "dept": "CSE",
-      "Designation": "Lecturer"
+  "RFID": "C671B32B",
+  "employees": {
+    "C671B32B": {
+      "profile": {
+        "name": "Rahat khan",
+        "gender": "male",
+        "dept": "CSE",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rfid-based-attendence-system.appspot.com/o/u3.jpg?alt=media&token=fd5c1e5c-d32e-43ab-86c3-eb066c2823e5",
+        "designation": "Lecturer"
+      }
     },
-    {
-      "id": "2398881C",
-      "name": "Ahsan Ullah",
-	  "image": "",
-      "dept": "Civil",
-      "Designation": "Senior Lecturer"
+    "2398881C": {
+      "profile": {
+        "name": "Ahsan Ullah",
+        "gender": "male",
+        "dept": "Civil",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rfid-based-attendence-system.appspot.com/o/u6.jpg?alt=media&token=cd056bec-4fdc-4b4c-83f3-849322305833",
+        "designation": "Senior Lecturer"
+      }
     },
-    {
-      "id": "1234",
-      "name": "Limon Arif",
-	  "image": "",
-      "dept": "EEE",
-      "Designation": "Lecturer"
+    "1234AC8B": {
+      "profile": {
+        "name": "Limon Arif",
+        "gender": "male",
+        "dept": "EEE",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rfid-based-attendence-system.appspot.com/o/u5.jpg?alt=media&token=848a7fe7-6f5e-46ca-962d-8a1c362196cd",
+        "designation": "Lecturer"
+      }
     },
-    {
-      "id": "2222",
-      "name": "Kamal Khandakar",
-	  "image": "",
-      "dept": "Law",
-      "Designation": "Lecturer"
+    "2S2D2E2": {
+      "profile": {
+        "name": "Kamal Khandakar",
+        "gender": "male",
+        "dept": "Law",
+        "image": {},
+        "designation": "Lecturer"
+      }
     }
-  ]
+  }
 }

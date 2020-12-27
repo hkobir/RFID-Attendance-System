@@ -16,6 +16,7 @@
 
   <!--bootstarp-->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"/>
 
 
   <!--Font-->
@@ -24,10 +25,13 @@
 
   <!--custom css-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/records_style.css">
 
 
 </head>
 <body>
+
+  <!-- hum burger menu -->
   <header class="header">
     <div class="container">
       <div class="header__body">
@@ -37,7 +41,7 @@
         <nav class="header__menu">
           <ul class="header__list">
             <li>
-              <a href="records.html" class="header__link">Show Records</a>
+              <a href="index.html" class="header__link">Authenticate</a>
             </li>
             <li>
               <a href="#" class="header__link">Employees</a>
@@ -60,58 +64,31 @@
     </div>
   </header>
 
-
+  <!-- records title -->
   <div id="toolbar" class="col-xs-5 header-logo">
 
-    <a href="index.html">
-      <div class="img-responsive logo">
-        <img src="images/logo.png" width="35" height="35" alt="" style="margin-bottom: 10px;">
 
-        <span style="color: #1FBFA9;font-weight: bolder;font-size: 28px">Smart </span>
-        <span style="color: black;font-weight: bolder;font-size: 28px;margin-left: -3px;">Attendance</span>
-      </div>
-    </a>
+    <div class="img-responsive logo">
+      <img src="images/record_list.svg" width="35" height="35" alt="" style="margin-bottom: 10px;">
+
+      <span style="font-size: 25px">All Records List</span>
+    </div>
+
 
   </div>
-  <div class="card" id="field">
-    <div class="card-body">
-
-      <div id="id_field"><span>Employ ID: </span><span id="patient_id"></span></div><br/>
-
-      <img src="" width="90px" height="90px" id="picture"/><br />
-      <span id="patient_name" style="color: #1FBFA9;font-size: 18px;font-family: Montserrat"></span><br />
-      <span id="patient_address" style="color: #33E2CA;font-size: 16px;font-family: monospace"></span><br />
 
 
-
-      <div id="info_field">
-
-
-
-        Designation: <span id="patient_blood" style="color: #1FBFA9;font-size: 16px;font-family: Montserrat"></span><br />
-        Department: <span id="patient_age" style="color: #1FBFA9;font-size: 16px;font-family: Montserrat"></span><br />
-        Gender: <span id="patient_gender" style="color: #1FBFA9;font-size: 16px;font-family: Montserrat"></span><br />
+  <!-- records data table  -->
+  <div id="records_table">
 
 
-      </div>
+  </div>
 
-      <!--progress bar during load-->
+
+ <!--progress bar during load-->
       <div id = "progress">
         <img src = "images/ajax-loader.gif" width="25px" height="25px" alt="Loading..."/>
       </div>
-
-      <br />
-      <img src="" width="50px" height="50px" id="status_image"/><br />
-      <span id="message"></span>
-      <br/><br/>
-      <span id="status_label">Status: </span> <span id="status"></span>
-
-    </div>
-  </div>
-
-
-
-
 
 
 
@@ -129,9 +106,12 @@
 
   <!-- Bootstrap js -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
   <!-- custom js -->
-  <script type="text/javascript" src="js/function.js"></script>
+  <script type="text/javascript" src="js/records.js"></script>
 
 </body>
 </html>
+
