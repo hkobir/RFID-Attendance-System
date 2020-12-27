@@ -57,7 +57,11 @@ firebase.database().ref().child("employees").child("sheets").on("value", functio
         data += `</tbody></table>`;
         console.log(data);
         jQuery('#records_table').html(data);
-        $('#data_table').DataTable();
+        $('#data_table').DataTable({
+          "order": [
+          [ 0, 'desc' ]
+          ]
+        });
 
         $("#progress").hide();
       }
