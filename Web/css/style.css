@@ -9,7 +9,9 @@ body{
 #toolbar{
 margin-top: 40px;
 }
-
+a:hover {
+  text-decoration: none;
+}
 #field{
   margin-left: 10%;
   margin-right: 10%;
@@ -134,9 +136,13 @@ text-decoration: none;
 }
 
 .header__link{
-  color: #ffffff;
+  color: #000000;
   text-transform: uppercase;
   font-size: 18px;
+  text-decoration: none;
+}
+.header__link:hover{
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -205,7 +211,8 @@ text-decoration: none;
     height: 100%;
     overflow: auto;
     transition: all 0.3s ease 0s;
-    background-color: rgba(156, 163, 163, 0.959);
+    /*background-color: rgba(156, 163, 163, 0.959);*/
+    background-color: rgba(72, 199, 165, 0.93);
     padding: 70px 10px 20px 10px;
 
   }
