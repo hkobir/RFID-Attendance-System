@@ -40,8 +40,8 @@
 // firebase define.
 #define FIREBASE_HOST "rfid-based-attendence-system-default-rtdb.firebaseio.com"
 #define FIREBASE_AUTH "6JlJ1WGHSzXuqRTAZVsFKKv8gtz2LHQtZct55zqP"
-#define WIFI_SSID "hkobir"
-#define WIFI_PASSWORD "hk123456"
+#define WIFI_SSID "Al Fatah"
+#define WIFI_PASSWORD "wadud@2021"
 
 
 String content = "";

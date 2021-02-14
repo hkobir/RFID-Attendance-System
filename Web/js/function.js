@@ -15,6 +15,7 @@ var firebaseConfig = {
 
   var pId;
   $(document).ready(function(){
+
     var database = firebase.database();
     var pTag;
     database.ref().child('RFID').on("value", function(snap){
@@ -23,7 +24,27 @@ var firebaseConfig = {
       $("#patient_id").text(pTag);
       console.log("Utag: "+pTag);
 
-    checkValid(pTag);  //check either tag is valid
+if(pTag == "none"){
+
+}
+else{
+checkValid(pTag);  //check either tag is valid
+
+  $("#field").dialog({
+                    modal: true,
+                    title: "Scan Result",
+                    width: 700,
+                    height: 520,
+                    open: function (event, ui) {
+                        setTimeout(function () {
+                            $("#field").dialog("close");
+              console.log("show after 5 sec");
+              database.ref("RFID").set("none");
+                        }, 10000);
+                    }
+                });
+}
+    
 
 
 
@@ -49,11 +70,11 @@ function checkValid(pTag){
 
         //firebase.database().ref().child("verified").set("no");  //set overall verification status
 
-        $('#message').text("Patient unverified!");
+        $('#message').text("Employ unverified!");
         $('#message').css('color','red');
         $("#progress").hide();
         $("#status_label").hide();
-        $('#status').hide();
+        $('#status').text("");
 
     //set profile value to null
     $('#picture').attr('src', "");
@@ -97,6 +118,7 @@ function showPatient(pTag){
         $('#message').css('color','green');
         $("#progress").hide();
         $("#status_label").show();
+
 
 
 //get status based on office time

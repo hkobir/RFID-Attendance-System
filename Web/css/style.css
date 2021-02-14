@@ -12,21 +12,33 @@ margin-top: 40px;
 a:hover {
   text-decoration: none;
 }
-#field{
-  margin-left: 10%;
-  margin-right: 10%;
+
+#scan_field{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 130px;
   text-align: center;
-  box-shadow: 3px 5px 3px #1FBFA9;
+}
+
+#signal_field{
+  margin-top: 100px;
+  text-align: center;
+}
+
+#field{
+  display: none;
+  text-align: center;
+  box-shadow: 2px 3px 2px #1FBFA9;
   border-radius: 10px;
-  margin-top: 10px;
 }
 #id_field{
- padding-top: 10px;
- padding-left: 40px;
- padding-right: 40px;
- padding-bottom: 10px;
+  font-size: 15px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 8px;
+padding-bottom: 8px;
  background-image: linear-gradient(to right, #A2D5AB, #E5EFC1 );
- border-radius: 10px;
+ border-radius: 8px;
  display: inline-block;
  border: none;
 }
@@ -35,29 +47,28 @@ a:hover {
   background-position: center center;
   border-radius: 50px;
   border: 0.5px solid #1FBFA9;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 3px;
 }
 #info_field{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 8px;
   border: 1px solid #1FBFA9;
   border-radius: 4px;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
 
 #patient_id{
+  font-size: 15px;
   color: #1FBFA9;
   font-style: bolder;
   font-family: 'Montserrat', sans-serif;
 
 }
 #progress{
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   display: inline-block;
   position: relative;
   justify-content: center;
@@ -70,7 +81,7 @@ a:hover {
   font-size: 15px;
 }
 #status_image{
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 #record_button{
 text-decoration: none;
