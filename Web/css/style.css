@@ -14,8 +14,8 @@ a:hover {
 }
 
 #scan_field{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 350px;
+  margin-right: 350px;
   margin-top: 130px;
   text-align: center;
 }
@@ -28,8 +28,6 @@ a:hover {
 #field{
   display: none;
   text-align: center;
-  box-shadow: 2px 3px 2px #1FBFA9;
-  border-radius: 10px;
 }
 #id_field{
   font-size: 15px;
@@ -52,9 +50,9 @@ padding-bottom: 8px;
 }
 #info_field{
   text-align: center;
-  margin-top: 8px;
+  margin-top: 18px;
   border: 1px solid #1FBFA9;
-  border-radius: 4px;
+  border-radius: 8px;
   padding-top: 4px;
   padding-bottom: 8px;
 }

@@ -24,23 +24,20 @@ var firebaseConfig = {
       $("#patient_id").text(pTag);
       console.log("Utag: "+pTag);
 
-if(pTag == "none"){
+if(pTag != "none"){
 
-}
-else{
 checkValid(pTag);  //check either tag is valid
-
   $("#field").dialog({
                     modal: true,
                     title: "Scan Result",
-                    width: 700,
-                    height: 520,
+                    width: 750,
+                    height: 550,
                     open: function (event, ui) {
                         setTimeout(function () {
                             $("#field").dialog("close");
               console.log("show after 5 sec");
               database.ref("RFID").set("none");
-                        }, 10000);
+                        }, 6000);
                     }
                 });
 }

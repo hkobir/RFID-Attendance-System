@@ -48,9 +48,16 @@ firebase.database().ref().child("employees").child("sheets").on("value", functio
           <td>${sheet.id} </td>
           <td>${sheet.name} </td>
           <td>${sheet.department} </td>
-          <td>${sheet.enterd} </td>
-          <td>${sheet.status} </td></tr>`;
+          <td>${sheet.enterd} </td>`;
+if(sheet.status == "Late"){
+ nextData += `<td style = "color:red;">${sheet.status} </td></tr>`;
           data += nextData;
+}
+else{
+   nextData += `<td style = "color:green;">${sheet.status} </td></tr>`;
+          data += nextData;
+}
+          
 
         });
 
